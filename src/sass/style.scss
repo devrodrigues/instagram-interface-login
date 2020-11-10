@@ -1,0 +1,54 @@
+@import "reset";
+@import "variables";
+@import "right-side";
+@import "footer";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/segoe-ui.otf") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Segoe UI";
+  background-color: $fundo-geral;
+  color: $fonte-geral;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-top: 8vh;
+}
+
+.main {
+  width: 752px;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.smartphone-img {
+  position: relative;
+  overflow: hidden;
+  margin-left: -42px;
+}
+
+.foto-smartphone {
+  position: absolute;
+  bottom: 93px;
+  left: 151px;
+}

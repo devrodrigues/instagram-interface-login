@@ -1,0 +1,30 @@
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 65px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+footer div:nth-child(1) {
+  margin: 25px;
+}
+
+footer a {
+  margin-right: 18px;
+  margin-bottom: 25px;
+}
+
+footer a:visited,
+footer a:active {
+  color: $fonte-geral;
+}
+
+footer a:nth-child(10) {
+  margin-right: 0;
+}

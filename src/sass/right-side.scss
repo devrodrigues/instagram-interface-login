@@ -1,0 +1,146 @@
+/*Lado direito - formulário, sign up e apps*/
+
+.right-side form {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 380px;
+  border: 1px solid lightgray;
+  background-color: $fundo-form;
+}
+
+.div-form form img {
+  width: 174px;
+  margin: 35px auto;
+}
+
+.right-side form input {
+  font-family: "Segoe UI";
+  width: 270px;
+  height: 35px;
+  margin-bottom: 6px;
+  padding: 8px;
+  font-size: 0.75rem;
+  line-height: 18px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  background-color: $fundo-geral;
+}
+
+.right-side form input:focus {
+  border: 1px solid rgb(173, 173, 173);
+  outline: none;
+}
+
+.button {
+  font-family: "Segoe UI";
+  font-size: 0.875rem;
+  line-height: 18px;
+  width: 270px;
+  height: 28px;
+  border: 0;
+  color: $fonte-botao;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.button-inactive {
+  @extend .button;
+  background-color: $fundo-botao-inativo;
+}
+
+.button-active {
+  @extend .button;
+  cursor: pointer;
+  background-color: $fundo-botao-ativo;
+}
+
+.or {
+  display: inline-block;
+  font-size: 0.8125rem;
+  margin-top: 24px;
+  margin-bottom: 30px;
+  color: #8a9095;
+  font-weight: 500;
+}
+
+//criar linhas laterais corretamente no OR
+.or:before {
+  content: "___________________";
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+
+.or:after {
+  content: "___________________";
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.after-form img {
+  display: inline-block;
+  bottom: 2px;
+  margin-right: 4px;
+}
+
+.after-form a {
+  margin-left: 10px;
+  margin-bottom: 24px;
+  font-size: 0.875rem;
+  color: $fonte-geral;
+  font-weight: 500;
+}
+
+.after-form span {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 18px;
+  text-align: center;
+}
+
+.after-form span:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.div-sign-up {
+  height: 60px;
+  margin-top: 10px;
+  border: 1px solid lightgray;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 18px;
+  line-height: 60px;
+  background-color: $fundo-form;
+}
+
+.div-sign-up a {
+  color: $fonte-sign-up;
+  font-weight: 600;
+}
+
+.div-get-app {
+  margin-top: 25px;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.div-apps {
+  display: flex;
+  width: 350px;
+  justify-content: center;
+}
+
+.div-apps img {
+  width: 135px;
+  height: 40px;
+  margin-top: 25px;
+}
+
+.div-apps img:nth-child(1) {
+  margin-right: 10px;
+}
